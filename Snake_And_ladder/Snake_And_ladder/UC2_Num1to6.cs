@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Snake_And_ladder
 {
-    internal class UC1_StartPosition0
+    internal class UC2_Num1to6
     {
-        public void start()
+        public void die()
         {
-            int position = 0;
+            Random random = new Random();
+            int position = random.Next(1, 7);
             Console.WriteLine(position);
         }
     }
