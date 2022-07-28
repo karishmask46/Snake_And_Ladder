@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Snake_And_ladder
 {
-    internal class UC4_PostionUpto100
+    internal class UC5_WinningPostion100
     {
         public const int Ladder = 1, Snake = 2;
         public void CheckPosition()
         {
             int Position = 0;
             Console.WriteLine("Start the postion from 0 : " + Position);
-            for ( Position =0;Position <= 100; Position++)
+            for ( ;Position < 100;)
             {
                 Random random1 = new Random();
                 int Die = random1.Next(1, 7);
@@ -25,6 +25,10 @@ namespace Snake_And_ladder
                     case Ladder:
                         Position += Die;
                         Console.WriteLine("The Player got the Ladder");
+                        if (Position > 100)
+                        {
+                            Position -= Die;
+                        }
                         break;
                     case Snake:
                         Position -= Die;

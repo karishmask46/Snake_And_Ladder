@@ -1,4 +1,4 @@
 ﻿using Snake_And_ladder;
 Console.WriteLine("Welcome to the Snake and Ladder");
-UC4_PostionUpto100 obj = new UC4_PostionUpto100();
+UC5_WinningPostion100 obj = new UC5_WinningPostion100();
 obj.CheckPosition();
