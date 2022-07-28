@@ -6,15 +6,17 @@ using System.Threading.Tasks;
 
 namespace Snake_And_ladder
 {
-    internal class UC5_WinningPostion100
+    internal class UC6_DieRolledCounts
     {
         public const int Ladder = 1, Snake = 2;
         public void CheckPosition()
         {
             int Position = 0;
+            int Count = 0;
             Console.WriteLine("Start the postion from 0 : " + Position);
             for ( ;Position < 100;)
             {
+                Count++;
                 Random random1 = new Random();
                 int Die = random1.Next(1, 7);
                 Console.WriteLine("The die get the number is : " + Die);
@@ -44,8 +46,9 @@ namespace Snake_And_ladder
                 }
             }
             Console.WriteLine("The player position is : " + Position);
-            
+            Console.WriteLine("The Dice Rolled To Reach 100 Position : " +Count);
         }
+       
     }
 }
     
